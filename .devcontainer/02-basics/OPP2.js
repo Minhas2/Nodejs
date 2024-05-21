@@ -32,6 +32,56 @@ const obj2= {3:"a",4:"b"}
 // const obj3=Object.assign(obj1,obj2)
 
 // adding empty presthesis
-const obj3=Object.assign({},obj1,obj2)
-console.log(obj3)
+// const obj3=Object.assign({},obj1,obj2)
 
+// using epsilon to spread the object most latest way
+const obj3={...obj1,...obj2}
+
+// console.log(obj3)
+
+const user = [
+    {
+        id: 1,
+        email: "@gmail"
+    },
+    {
+        id: 2,
+        email: "@gmail"
+    },
+    {
+        id: 3,
+        email: "@gmail"
+    }
+];
+
+// user[1].email
+// console.log(tinderuser);
+
+// tells elements in tinder user
+// console.log(Object.Keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
+
+// console.log(tinderuser.hasOwnProperty(id));
+
+const course={
+    coursename:"js",
+    price:"199",
+    courseInsterctor:"Sir"
+}
+
+const{courseInsterctor}=course
+console.log(courseInsterctor);
+
+// {
+//     "name": "ali",
+//     "coursename": "js",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {},
+
+]
