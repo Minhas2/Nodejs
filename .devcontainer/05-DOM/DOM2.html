@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pani aur code / DOM</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>        
+
+
+
+</body>
+<script>
+    function addfunction(LangName) {
+        const li = document.createElement("li")
+        li.innerHTML=`${LangName}`
+        document.querySelector(`.lang`).
+        appendChild(li)
+    }
+
+    // addfunction("Matlab")
+    // addfunction("C ++")
+    // addfunction("C")
+
+    // more optimized approach 
+
+    function addOptiLangauge(LangName) {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector(`.lang`).
+        appendChild(li)
+    }
+
+    addOptiLangauge("python")
+
+    // Edit
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML="mojo"
+
+    const newli = document.createElement("li")
+    newli.textContent="mojo"
+    secondlang.replaceWith(newli)
+
+
+    // Edit
+    const firstlang = docment.querySelector("li:first-child")
+    firstlang.outerHTML="<li>Typescript</li>"
+
+    // remove
+    const lastlang = docment.querySelector("li:last-child")
+    lastlang.remove()
+
+
+
+
+</script>
+
+</html>
