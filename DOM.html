@@ -15,15 +15,32 @@
 </body>
 <script>
     const parent=document.querySelector(`.parent`)
-    console.log(parent);
-    console.log(parent.children);
-    console.log(parent.children[1].innerHTML);
+    // console.log(parent);
+    // console.log(parent.children);
+
+    // prints first element child elment in parent class
+    // console.log(parent.children[1].innerHTML);
     
 
-    for (let i = 0; i < parent.children; i++) {
-        console.log((parent.children[i].innerHTML));
-        
-    }
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        }
+
+        parent.children[1].style.color="orange"
+
+        // gets first child element
+        console.log(parent.firstElementChild);
+        // gets Second child element
+        console.log(parent.lastElementChild);
+
+
+        const dayone=document.querySelector(`.day`)
+        console.log(dayone)
+        // tell about dayone parent lement
+        console.log(dayone.parentElement)
+        console.log("NODES: ", parent.childNodes)
+
+
 </script>
 
 </html>
